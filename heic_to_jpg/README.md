@@ -13,4 +13,6 @@ An HEIC file contains one or more images saved in the High Efficiency Image Form
  
 #### References
 1. https://github.com/monostream/tifig
-2. https://www.theverge.com/2017/9/19/16332192/apple-ios-11-heic-iphone-image-format 
+2. https://www.theverge.com/2017/9/19/16332192/apple-ios-11-heic-iphone-image-format
+
+*PS: If you do not want to upload your .HEIC photos to a cloud utility for conversion, use this. Go ahead and star [tifig](https://github.com/monostream/tifig) repo for the awesome work. Kudos !!*   

@@ -1,20 +1,16 @@
-# -*- coding: utf-8 -*-
 """
 @created on: 28/03/19,
 @author: Shreesha N,
 @version: v0.0.1
-
 Description:
-
 Sphinx Documentation Status:
-
 ..todo::
-
 """
 
 import glob
 import os
 from shutil import copyfile
+import argparse
 
 
 def convert_heic_to_jpg(file, out_filename):
@@ -31,8 +27,14 @@ def convert_heic_to_jpg(file, out_filename):
 if __name__ == '__main__':
 
     # input file paths, output path
-    in_path = "/your/input/path/having/heic/files/*"
-    out_path = "/Users/shreeshan/Downloads/Last_date_before_engagement_jpg/"
+
+    parser = argparse.ArgumentParser(description="heic to jpg converter")
+    parser.add_argument('--input_path', default=None, type=str, help='The folder containing .HEIC files')
+    parser.add_argument('--output_path', default=None, type=str, help='The folder where the result has to be written')
+    args = parser.parse_args()
+
+    in_path = args.input_path + "/*"
+    out_path = args.output_path
 
     extension_to_convert = '.HEIC'
 

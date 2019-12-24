@@ -11,9 +11,9 @@ An HEIC file contains one or more images saved in the High Efficiency Image Form
 4. Some .HEIC photos to convert :P
 
 ### Usage
-
- -- python main.py --heic_folder <input_path> --output_folder <output_path>
- 
+```
+ python main.py --heic_folder <input_path> --output_folder <output_path>
+ ```
  
 #### References
 1. https://github.com/monostream/tifig
